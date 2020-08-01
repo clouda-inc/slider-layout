@@ -23,7 +23,7 @@ export const useSliderControls = (infinite: boolean) => {
       nextSlide = nextMaximumSlides
       nextTransformValue = transformMap[nextSlide]
     } else if (nextMaximumSlides < 0 && currentSlide !== 0) {
-      /** Prevent overslide */
+      /** Prevent over-slide */
       nextSlide = 0
       nextTransformValue = 0
     } else if (infinite) {
